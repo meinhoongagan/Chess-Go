@@ -14,7 +14,7 @@ func main() {
 	config.LoadConfig()
 
 	database.Connect()
-	// database.MigrateDB()
+	database.MigrateDB()
 
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
